@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.5rem;
+    background-color:rgb(231, 235, 239);
+}
+
+.wrapper{
+    width: 100%;
+  
+    box-shadow: 0 0 20px 0 rgb(192, 202, 199);
+}
+.mobile-v{
+display: block;
+padding: 50px;
+box-shadow: 0px 2px 3px rgb(221, 211, 211);
+}
+.Input-text{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+.contact{
+    width: 100%;
+}
+
+.contact form{
+    display: flexbox;
+    padding: 20px;
+    margin-left: auto;
+   
+}
+.contact form label{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    font-style: italic;
+}
+.contact form input{
+    display: inline-block;
+}
+.contact .Input-text{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and(max-width:700px){
+    .contact .Input-text{
+        margin: 0 auto;
+        width: 60%;
+        text-align: center;
+    }
+    
+}

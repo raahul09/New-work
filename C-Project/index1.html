@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style1.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="mobile-v text-center ">
+                <h1>Registration Form</h1>
+                <h6>You have account<b>?</b> <span><a href="#">Login here!</a></span></h6>
+                <p>
+                    <button type="button" class="btn btn-primary mb-3 w-50 " data-toggle="collapse" data-target="#demo">Click
+                        to Register!</button>
+                </p>
+                <div class="collapse" id="demo">
+                    <p>
+                        <input type="tel" placeholder="+91 999 999 999 99" class="form-control Input-text " minlength="10">
+                    </p>
+                    <button type="submit" class="btn btn-primary mb-3 w-50" data-toggle="collapse" data-target="#demo-v" id="gen" onclick="otp()">Generate OTP</button> 
+                   
+                </div>
+                
+                <P id="demo-c" class="p-1"></P>
+                
+                <div class="collapse" id="demo-v">
+                    <input type="submit reset" placeholder="OTP" class="form-control Input-text" id="x">
+                    <button type="reset" class="btn btn-primary mt-3 w-50 " onclick="myFunction()">
+                        Validation </button>
+                        <P id="demo-v" class="p-1"></P>
+                </div>      
+                <button type="reset"  data-toggle="collapse" data-target="#xgen" id="xgenc" ></button> 
+            </div>
+            
+           
+                   
+
+            <div class="contact collapse " id="xgen">
+                <h1 class="text-center mt-3">Person Information</h1>
+                <form action="">
+                    <p>
+                        <label>First Name</label>
+                        <input type="text" class="form-control Input-text " >
+                   
+                    </p>
+                    <p>
+                        <label>Middle Name</label>
+                        <input type="text" class="form-control Input-text " >
+                    </p>
+                    <p>
+                        <label>Last Name</label>
+                        <input type="text" class="form-control Input-text " >
+                    </p>
+                    <p>
+                        <label>Gender</label>
+                        <select name="Gender" class="select-gender btn w-50 ">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>Primary Email</label>
+                        <input type="email" class="form-control Input-text " >
+                    </p>
+                    <p>
+                        <label>Secondary Email</label>
+                        <input type="email" class="form-control Input-text " >
+                    </p>
+                    <p>
+                        <label>State</label>
+                        <input type="text" class="form-control Input-text " >
+                    </p>
+                    <p>
+                        <label>City</label>
+                        <input type="text" class="form-control Input-text " >
+                    </p>
+                    <p>
+                        <label>Pincode</label>
+                        <input type="text" class="form-control Input-text " maxlength="6" >
+                    </p>
+                    <p class="">
+                        <button type="reset" value="Reset" class="btn btn-primary w-50" data-toggle="collapse" data-target="#demo">Submit</button>
+                        
+                    </p>
+                </form>
+              
+            </div>
+        </div>
+</body>
+
+</html>
