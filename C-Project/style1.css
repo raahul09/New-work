@@ -10,7 +10,7 @@ body{
 
 .wrapper{
     width: 100%;
-  
+    margin-top: 20%;
     box-shadow: 0 0 20px 0 rgb(192, 202, 199);
 }
 .mobile-v{
@@ -20,7 +20,7 @@ box-shadow: 0px 2px 3px rgb(221, 211, 211);
 }
 .Input-text{
     margin: 0 auto;
-    width: 100%;
+    width: 60%;
     text-align: center;
 }
 .contact{
@@ -48,11 +48,11 @@ box-shadow: 0px 2px 3px rgb(221, 211, 211);
     text-align: center;
 }
 
-@media screen and(max-width:700px){
+@media screen and (min-width : 1000px) {
+  
     .contact .Input-text{
         margin: 0 auto;
-        width: 60%;
+        width: 50%;
         text-align: center;
     }
-    
 }
